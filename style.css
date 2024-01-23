@@ -1,0 +1,657 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  display: flex;
+  color: #4f545d;
+  justify-content: space-between;
+  margin: 0px 6% 0px 6%;
+  align-items: center;
+  margin-top: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  margin-right: 50px;
+  padding-right: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Nunito", sans-serif;
+  font-weight: bolder;
+  font-size: small;
+}
+
+nav ul li {
+  margin: 0 20px 0 20px;
+}
+
+nav .logo {
+  order: -1;
+  margin-left: 10%;
+}
+
+nav section img {
+  width: 80%;
+}
+
+nav ul .signup-btn {
+  padding: 5px 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  background-color: white;
+}
+nav ul .signup-btn:hover {
+  background-color: goldenrod;
+  border-color: goldenrod;
+}
+
+nav ul .language-dropdown {
+  position: relative;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+nav ul .language-dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+nav ul .language-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+nav ul .language-dropdown .dropdown-content li {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+nav ul .language-dropdown .dropdown-content li:last-child {
+  border-bottom: none;
+}
+main {
+  display: flex;
+  margin-bottom: 200px;
+}
+
+.left-section {
+  padding: 0 0 0 8%;
+  margin: 0% 0% 0% 7%;
+  position: relative;
+  max-width: 35%;
+}
+
+.right-section img {
+  position: absolute;
+  top: 5em;
+  left: 39em;
+  z-index: 1;
+  width: 40%;
+  margin-right: 50%;
+}
+main span h5 {
+  margin-top: 17%;
+  margin-bottom: 0%;
+  color: #e27660;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+main span h1 {
+  font-size: 400%;
+  line-height: 1;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  color: #181e4b;
+  margin-top: 3%;
+  margin-bottom: 0%;
+}
+main span p {
+  font-family: "Poppins", sans-serif;
+  color: #81849d;
+  font-size: small;
+  font-weight: 600;
+  margin-bottom: 0%;
+}
+.cta-button {
+  display: block;
+  margin-top: 15px;
+  font-family: "Poppins", sans-serif;
+  padding: 15px 25px;
+  font-size: medium;
+  background-color: #f1a501;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ca9804;
+}
+
+.category header {
+  font-size: large;
+  color: #787c96;
+  font-weight: bold;
+}
+
+.category section {
+  font-size: 300%;
+  color: #14183e;
+}
+
+.category {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 100%;
+}
+
+.category header {
+  font-size: large;
+  font-weight: bold;
+  color: #787c96;
+}
+
+.category-content {
+  font-size: small;
+  flex-grow: 1;
+}
+.category div {
+  margin-right: 0%;
+  padding: 0%;
+  max-width: 100%;
+}
+
+.services-list {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  width: 250px;
+  border-radius: 8px;
+  padding-bottom: 20px;
+  overflow: hidden;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card .card-img {
+  height: auto;
+  width: auto;
+  margin: auto;
+}
+
+/* Styles for the card image */
+.service-card .card-img img {
+  width: 90%;
+  height: 90%;
+}
+
+/* Styles for the card content */
+.service-card .card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Styles for the heading */
+.service-card .card-content h2 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #333;
+}
+
+/* Styles for the description */
+.service-card .card-content p {
+  color: #727692;
+  text-align: center;
+  width: 90%;
+  font-weight: 500;
+  margin: auto;
+}
+
+.service-card:hover {
+  box-shadow: 5px 20px 20px #f6f5f2;
+  border-radius: 20px;
+  transform: translateY(-5px);
+  z-index: 1;
+}
+/* Add this CSS for centering */
+.top-selling header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  /* height: 100vh; Adjust as needed */
+}
+
+/* Optional: Add styling for individual headings */
+.top-selling header div h4 {
+  margin-bottom: 0%;
+  color: #646886;
+  /* margin: 10px; */
+}
+.top-selling header div h1 {
+  font-weight: normal;
+  font-size: xx-large;
+  margin-top: 8px;
+}
+.top-selling-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  margin-bottom: 150px;
+}
+
+.top-selling-card {
+  background-color: #fff;
+  /* border: 1px solid #ddd; */
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 10px;
+  position: relative;
+  color: #646886;
+  z-index: 1;
+  line-height: 1;
+  margin-left: 5px;
+  margin-right: 50px;
+}
+
+.card-img img {
+  width: 100%;
+  height: auto;
+}
+
+.destination-details,
+.trip-days {
+  padding: 10px 10px 0 10px;
+}
+.trip-days p {
+  font-weight: 500;
+}
+
+.trip-days img {
+  margin-right: 5px;
+  width: 23px;
+}
+.destination-details {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.destination-details p {
+  font-weight: 500;
+  margin: 0;
+}
+.trip-days {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  padding-left: 10px;
+}
+
+.left header p {
+  color: #6c637d;
+  font-weight: 700;
+}
+.slogan p {
+  font-size: 300%;
+  margin-bottom: 0px;
+  margin-top: 0%;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 50%;
+}
+.book-trip {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+.option {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.trip-content {
+  max-width: 50%;
+  margin-left: 8px;
+  color: #787c96;
+}
+.para {
+  font-size: small;
+}
+.right .top-selling-card {
+  box-shadow: 10px -10px 50px #d6d4fb77;
+}
+.option img {
+  margin-right: 10px;
+}
+
+.option h4 {
+  margin-bottom: 0px;
+  /* font-weight:  200px; */
+  margin-top: 3%;
+}
+.trip-content p {
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+.card-texts {
+  margin-left: 25px;
+}
+.right .top-selling-card .card-img {
+  padding: 5%;
+  padding-bottom: 0;
+  margin: 0 3px 0 3px;
+}
+.card-texts h3 {
+  color: black;
+  font-size: large;
+  font-weight: 400;
+  margin-bottom: 6px;
+}
+.card-texts .destination-details {
+  padding-left: 0px;
+}
+.card-texts .destination-details p {
+  padding-left: 3px;
+  font-weight: 600;
+  color: #8b8ea5;
+  font-size: medium;
+}
+.icons {
+  margin-top: 20px;
+  max-width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 15px;
+}
+.card-texts .trip-days {
+  font-weight: 100;
+  color: #8b8ea5;
+  margin-bottom: 10px;
+}
+.overhead-banner {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  align-items: center;
+  height: 100vh;
+  z-index: 1;
+  position: absolute;
+  top: -7em;
+  left: 11.7em;
+}
+
+.card {
+  display: flex;
+  width: 74%; /* Adjust max-width as needed */
+  background-color: white;
+  box-shadow: 40px 0px 20px rgba(92, 89, 89, 0.037);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.aside-image {
+  /* flex: 1; */
+  /* padding: 20px; */
+  width: 20%;
+  margin-top: 16px;
+  margin-left: 10px;
+}
+
+.aside-image img {
+  width: 100%;
+  height: auto;
+}
+
+.aside-text {
+  flex: 1;
+  padding-left: 10px;
+  padding-right: 20px;
+  width: 80%;
+}
+
+/* Additional styling if needed */
+.aside-text h6 {
+  color: #8b8ea5;
+  margin: 0;
+}
+.aside-text h4 {
+  font-weight: 700;
+}
+
+.progress-line {
+  width: 100%;
+  height: 5px;
+  background-color: #f5f5f5; /* Set the background color of the uncompleted bar */
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.completed-bar {
+  height: 100%;
+  width: 40%;
+  background-color: #8a79df;
+  border-radius: 5px;
+}
+
+.right {
+  position: relative;
+  margin-right: 120px;
+}
+
+/* subscrivebe */
+.sub-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subscribe {
+  margin-top: 100px;
+  position: relative;
+  background-color: #f9f7fe;
+  overflow: hidden;
+  border-radius: 80px 30px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  padding-bottom: 3%;
+}
+.rings img {
+  width: 37vh;
+  height: auto;
+  opacity: 0.2;
+}
+.rings {
+  position: absolute;
+  top: 5em;
+  left: 1em;
+}
+.right-r img {
+  width: 30vh;
+  height: auto;
+  opacity: 0.2;
+  transform: rotate(270deg);
+}
+.right-r {
+  position: absolute;
+  top: 1em;
+  left: 64em;
+}
+.sub-container {
+  position: relative;
+}
+.telegram {
+  position: absolute;
+  top: 5em;
+  right: 7em;
+  z-index: 1;
+}
+.telegram img {
+  width: 70%;
+}
+
+.subscribe .heading {
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: larger;
+  color: #5e6282;
+  text-align: center;
+  margin: 25px 0px 25px 0px;
+}
+.mailer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+  z-index: 1;
+}
+.mailer div img {
+  width: 7%;
+}
+.mailer .email-typer {
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  align-items: center;
+  width: 60%;
+  padding-top: 4%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  padding-left: 4%;
+  padding-bottom: 4%;
+}
+input {
+  padding-left: 8px;
+  border: 0px solid;
+}
+input :focus {
+  outline: none;
+}
+.Subscribe-btn {
+  padding: 5px 10px;
+  border: 2px solid #ff8c6b;
+  background-color: #ff8c6b;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-size: x-small;
+  padding: 12px;
+  padding-left: 7%;
+  padding-right: 7%;
+  font-weight: 600;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+.Subscribe-btn:hover {
+  background-color: goldenrod;
+  border-color: goldenrod;
+}
+/* footer */
+.footer {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  margin-top: 10%;
+  padding-left: 9%;
+  justify-content: space-between;
+  align-items: center;
+  width: 78%;
+}
+.footer h1 {
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.footer p {
+  padding-top: 0;
+  margin-top: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: small;
+  color: #757894;
+  margin-bottom: 70px;
+}
+.about a {
+  text-decoration: none;
+  color: #757894;
+}
+.about h5 {
+  margin: 5px 0px 2px 0px;
+}
+.about h3 {
+  margin: 0px 0px 17px 0px;
+}
+.icon-soc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.social-links {
+  width: 14%;
+}
+.icon-soc div {
+  width: 8%;
+}
+.icon-soc div img {
+  width: 300%;
+}
+.discover h3 {
+  color: #84879f;
+  font-family: "Poppins", sans-serif;
+  font-size: large;
+  margin-bottom: 7px;
+  margin-top: 10px;
+  font-weight: 500;
+  /* margin-left: px; */
+}
+.download {
+  display: flex;
+  justify-content: space-between;
+}
+.download img {
+  width: 100%;
+}
+.rights {
+  color: #84879f;
+  display: flex;
+  font-size: smaller;
+  align-items: center;
+  justify-content: center;
+}
