@@ -1,46 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
+}
+header {
+  padding: 0;
+
+  margin: 2% 3% 0 10%;
 }
 
 nav {
   display: flex;
   color: #4f545d;
   justify-content: space-between;
-  margin: 0px 6% 0px 6%;
-  align-items: center;
-  margin-top: 10px;
-}
 
-nav ul {
-  list-style-type: none;
-  display: flex;
-  margin-right: 50px;
-  padding-right: 80px;
+  align-items: center;
+}
+.logo img {
+  width: 100%;
+  min-width: 40%;
+}
+.nav-items {
+  margin: 0 5%;
+  padding: 0;
+  min-width: 35em;
+  width: 46em;
+  /* max-width: 55em; */
+}
+.nav-items ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "Nunito", sans-serif;
-  font-weight: bolder;
-  font-size: small;
+  flex-direction: row;
+  list-style-type: none;
+
+  font-size: medium;
 }
 
 nav ul li {
-  margin: 0 20px 0 20px;
+  margin: 0 20px 0 0px;
 }
-
-nav .logo {
-  order: -1;
-  margin-left: 10%;
-}
-
-nav section img {
-  width: 80%;
+.nav-items ul li {
+  color: #2c333c;
+  font-weight: 600;
 }
 
 nav ul .signup-btn {
-  padding: 5px 10px;
-  border: 2px solid black;
+  padding: 5px 15px;
+  border: 1px solid #2c333c;
   border-radius: 5px;
   cursor: pointer;
   display: inline-block;
@@ -73,6 +80,7 @@ nav ul .language-dropdown:hover .dropdown-content {
 nav ul .language-dropdown .dropdown-content li {
   padding: 10px;
   text-align: center;
+  align-items: center;
   border-bottom: 1px solid #ddd;
 }
 
@@ -81,53 +89,58 @@ nav ul .language-dropdown .dropdown-content li:last-child {
 }
 main {
   display: flex;
-  margin-bottom: 200px;
+  margin-bottom: 75px;
+  justify-content: space-around;
+  /* margin: 0px 10% 0px 10%; */
+  align-items: center;
 }
 
-.left-section {
-  padding: 0 0 0 8%;
-  margin: 0% 0% 0% 7%;
-  position: relative;
-  max-width: 35%;
+.landing-left-section {
+  flex: 1;
 }
 
-.right-section img {
-  position: absolute;
-  top: 5em;
-  left: 39em;
-  z-index: 1;
-  width: 40%;
-  margin-right: 50%;
+.landing-right-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  /* max-width: 35%; */
 }
-main span h5 {
-  margin-top: 17%;
-  margin-bottom: 0%;
+.landing-right-section img {
+  max-width: 110%;
+  margin-right: 30px;
+}
+main div h4 {
+  margin-top: 0%;
+  margin-bottom: 4%;
   color: #e27660;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: large;
 }
-main span h1 {
-  font-size: 400%;
-  line-height: 1;
-  font-weight: 700;
-  font-family: "Poppins", sans-serif;
+main div h1 {
+  font-size: 500%;
+  line-height: 1.1;
+  font-weight: 800;
   color: #181e4b;
   margin-top: 3%;
-  margin-bottom: 0%;
+  margin-bottom: 5%;
 }
-main span p {
-  font-family: "Poppins", sans-serif;
-  color: #81849d;
-  font-size: small;
-  font-weight: 600;
-  margin-bottom: 0%;
+main div p {
+  color: #6b6e8c;
+  font-size: medium;
+  font-weight: 500;
+  margin-bottom: 7%;
 }
 .cta-button {
   display: block;
   margin-top: 15px;
-  font-family: "Poppins", sans-serif;
-  padding: 15px 25px;
+  padding: 3%;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-shadow: 0px 5px 30px #f1a50169;
   font-size: medium;
+  font-weight: 500;
   background-color: #f1a501;
   color: #fff;
   border: none;
@@ -140,42 +153,38 @@ main span p {
   background-color: #ca9804;
 }
 
-.category header {
-  font-size: large;
-  color: #787c96;
-  font-weight: bold;
-}
-
-.category section {
-  font-size: 300%;
-  color: #14183e;
-}
-
 .category {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin: 20px auto;
-  padding: 20px;
+  margin: 0;
+  padding: 0px;
   max-width: 100%;
 }
 
-.category header {
+.category {
   font-size: large;
-  font-weight: bold;
-  color: #787c96;
+  font-weight: 600;
+  color: #5e6282;
 }
 
 .category-content {
-  font-size: small;
+  font-size: large;
   flex-grow: 1;
+  font-size: 300%;
+  font-weight: 500;
+  color: #14183e;
 }
 .category div {
   margin-right: 0%;
   padding: 0%;
   max-width: 100%;
+}
+.category img {
+  position: absolute;
+  transform: translate(610px, 20%);
 }
 
 .services-list {
@@ -186,11 +195,11 @@ main span p {
 }
 
 .service-card {
-  width: 250px;
+  width: 17%;
   border-radius: 8px;
   padding-bottom: 20px;
   overflow: hidden;
-  margin: 20px;
+  margin: 2%;
   display: flex;
   flex-direction: column;
 }
@@ -201,31 +210,23 @@ main span p {
   margin: auto;
 }
 
-/* Styles for the card image */
-.service-card .card-img img {
-  width: 90%;
-  height: 90%;
-}
-
-/* Styles for the card content */
 .service-card .card-content {
-  padding: 20px;
+  padding: 10px;
   text-align: center;
 }
 
-/* Styles for the heading */
 .service-card .card-content h2 {
-  font-size: 20px;
+  font-size: larger;
   margin: 10px 0;
-  color: #333;
+  color: #252452;
+  font-weight: 600;
 }
 
-/* Styles for the description */
 .service-card .card-content p {
-  color: #727692;
+  color: #616585;
   text-align: center;
   width: 90%;
-  font-weight: 500;
+  font-weight: 400;
   margin: auto;
 }
 
@@ -235,25 +236,24 @@ main span p {
   transform: translateY(-5px);
   z-index: 1;
 }
-/* Add this CSS for centering */
-.top-selling header {
+.top-selling .selling-header {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: "Poppins", sans-serif;
-  /* height: 100vh; Adjust as needed */
 }
 
-/* Optional: Add styling for individual headings */
-.top-selling header div h4 {
+.top-selling .selling-header div h4 {
   margin-bottom: 0%;
   color: #646886;
-  /* margin: 10px; */
+  font-weight: 600;
+  font-size: large;
+  margin-right: 40px;
 }
-.top-selling header div h1 {
-  font-weight: normal;
-  font-size: xx-large;
+.top-selling .selling-header div h1 {
+  font-weight: 500;
+  font-size: 300%;
+  color: #14183e;
   margin-top: 8px;
 }
 .top-selling-list {
@@ -261,7 +261,7 @@ main span p {
   justify-content: center;
   align-items: center;
   min-height: 100%;
-  margin-bottom: 150px;
+  margin-bottom: 15%;
 }
 
 .top-selling-card {
@@ -275,8 +275,6 @@ main span p {
   color: #646886;
   z-index: 1;
   line-height: 1;
-  margin-left: 5px;
-  margin-right: 50px;
 }
 
 .card-img img {
@@ -290,6 +288,8 @@ main span p {
 }
 .trip-days p {
   font-weight: 500;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 
 .trip-days img {
@@ -299,27 +299,30 @@ main span p {
 .destination-details {
   display: flex;
   justify-content: space-between;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .destination-details p {
   font-weight: 500;
+  font-size: large;
   margin: 0;
 }
 .trip-days {
   display: flex;
   align-items: center;
   padding: 0px;
-  padding-left: 10px;
+  padding-left: 25px;
 }
 
-.left header p {
-  color: #6c637d;
-  font-weight: 700;
+.left .book-trip-title p {
+  color: #5e6282;
+  font-weight: 600;
+  font-size: large;
 }
 .slogan p {
   font-size: 300%;
+  font-weight: 500;
   margin-bottom: 0px;
   margin-top: 0%;
 }
@@ -346,19 +349,25 @@ main span p {
   color: #787c96;
 }
 .para {
-  font-size: small;
+  font-size: medium;
+  font-weight: 300;
 }
 .right .top-selling-card {
   box-shadow: 10px -10px 50px #d6d4fb77;
 }
 .option img {
   margin-right: 10px;
+  width: 7%;
+}
+.map {
+  width: 25%;
 }
 
 .option h4 {
   margin-bottom: 0px;
   /* font-weight:  200px; */
   margin-top: 3%;
+  color: #5e6282;
 }
 .trip-content p {
   font-weight: 500;
@@ -374,17 +383,22 @@ main span p {
   margin: 0 3px 0 3px;
 }
 .card-texts h3 {
-  color: black;
+  color: #1b1b1b;
   font-size: large;
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 6px;
 }
+.like {
+  margin-left: 30%;
+  width: 5%;
+}
+
 .card-texts .destination-details {
   padding-left: 0px;
 }
 .card-texts .destination-details p {
   padding-left: 3px;
-  font-weight: 600;
+  font-weight: 500;
   color: #8b8ea5;
   font-size: medium;
 }
@@ -399,6 +413,7 @@ main span p {
 .card-texts .trip-days {
   font-weight: 100;
   color: #8b8ea5;
+  padding-left: 8px;
   margin-bottom: 10px;
 }
 .overhead-banner {
@@ -445,10 +460,12 @@ main span p {
 /* Additional styling if needed */
 .aside-text h6 {
   color: #8b8ea5;
+  font-weight: 600;
+  font-size: small;
   margin: 0;
 }
 .aside-text h4 {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .progress-line {
@@ -471,6 +488,9 @@ main span p {
   position: relative;
   margin-right: 120px;
 }
+.right .top-selling-card {
+  margin-top: 60px;
+}
 
 /* subscrivebe */
 .sub-container {
@@ -489,7 +509,8 @@ main span p {
   justify-content: space-around;
   align-items: center;
   width: 80%;
-  padding-bottom: 3%;
+  padding-bottom: 6%;
+  padding-top: 3%;
 }
 .rings img {
   width: 37vh;
@@ -498,7 +519,7 @@ main span p {
 }
 .rings {
   position: absolute;
-  top: 5em;
+  top: 11em;
   left: 1em;
 }
 .right-r img {
@@ -510,7 +531,7 @@ main span p {
 .right-r {
   position: absolute;
   top: 1em;
-  left: 64em;
+  left: 57em;
 }
 .sub-container {
   position: relative;
@@ -527,35 +548,45 @@ main span p {
 
 .subscribe .heading {
   padding: 20px;
-  font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: larger;
+  font-size: xx-large;
   color: #5e6282;
   text-align: center;
   margin: 25px 0px 25px 0px;
 }
-.mailer {
+.email {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 40%;
+  margin-top: 2%;
   z-index: 1;
 }
-.mailer div img {
+.email div img {
   width: 7%;
 }
-.mailer .email-typer {
+.ongoing {
+  margin-top: 20px;
+  font-weight: 500;
+}
+.rome-trip {
+  margin: 0%;
+}
+
+.email .email-type {
   display: flex;
   background-color: white;
   border-radius: 10px;
   align-items: center;
   width: 60%;
   padding-top: 4%;
-  font-family: "Poppins", sans-serif;
   font-weight: 800;
   padding-left: 4%;
   padding-bottom: 4%;
+}
+input::placeholder {
+  font-weight: 500;
 }
 input {
   padding-left: 8px;
@@ -564,6 +595,7 @@ input {
 input :focus {
   outline: none;
 }
+
 .Subscribe-btn {
   padding: 5px 10px;
   border: 2px solid #ff8c6b;
@@ -571,7 +603,7 @@ input :focus {
   border-radius: 8px;
   cursor: pointer;
   color: white;
-  font-size: x-small;
+  font-size: small;
   padding: 12px;
   padding-left: 7%;
   padding-right: 7%;
@@ -587,12 +619,12 @@ input :focus {
 .footer {
   display: flex;
   flex-direction: row;
-  margin: 20px;
+  margin: 0px;
   margin-top: 10%;
   padding-left: 9%;
   justify-content: space-between;
   align-items: center;
-  width: 78%;
+  width: 80%;
 }
 .footer h1 {
   margin-bottom: 20px;
@@ -601,7 +633,6 @@ input :focus {
 .footer p {
   padding-top: 0;
   margin-top: 0;
-  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: small;
   color: #757894;
@@ -609,10 +640,12 @@ input :focus {
 }
 .about a {
   text-decoration: none;
-  color: #757894;
+  color: #5e6282;
 }
 .about h5 {
   margin: 5px 0px 2px 0px;
+  font-weight: 500;
+  font-size: medium;
 }
 .about h3 {
   margin: 0px 0px 17px 0px;
@@ -630,11 +663,19 @@ input :focus {
   width: 8%;
 }
 .icon-soc div img {
-  width: 300%;
+  width: 400%;
+}
+.trip-progress-no {
+  margin-top: 8px;
+  display: inline;
+  color: #9787e3;
+}
+.completion {
+  display: inline;
+  color: black;
 }
 .discover h3 {
-  color: #84879f;
-  font-family: "Poppins", sans-serif;
+  color: #5e6282;
   font-size: large;
   margin-bottom: 7px;
   margin-top: 10px;
@@ -646,12 +687,15 @@ input :focus {
   justify-content: space-between;
 }
 .download img {
-  width: 100%;
+  width: 101%;
 }
+
 .rights {
-  color: #84879f;
+  color: #5e6282;
   display: flex;
   font-size: smaller;
+  font-weight: 500;
+  padding-bottom: 20px;
   align-items: center;
   justify-content: center;
 }
