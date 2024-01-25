@@ -23,18 +23,18 @@
             <li>Flights</li>
             <li>Bookings</li>
             <li>Login</li>
-            <div class="signup-btn">Sign up</div>
+            <div class="btn signup-btn">Sign up</div>
             <div class="language-dropdown">
-              <span class="dropdown-trigger">EN&#9660;</span>
-              <ul class="dropdown-content">
-                <li>Hindi</li>
-                <li>German</li>
-              </ul>
+              <select name="lang" id="lang">
+                <option value="English">EN</option>
+                <option value="Hindi">HN</option>
+                <option value="French">FN</option>
+              </select>
             </div>
           </ul>
         </section>
       </nav>
-      <main>
+      <section class="main">
         <div class="landing-left-section">
           <h4>BEST DESTINATIONS AROUND THE WORLD</h4>
           <h1>
@@ -46,12 +46,12 @@
             Preferred to sportsmen it engrossed listening. Park gate <br />
             sell they west hard for the.
           </p>
-          <button class="cta-button">Find out more</button>
+          <button class="btn cta-btn">Find out more</button>
         </div>
         <div class="landing-right-section">
           <img src="images\traveller.png" alt="traveller" />
         </div>
-      </main>
+      </section>
     </header>
     <section class="category">
       <div>
@@ -61,7 +61,7 @@
       <img src="images\plus.png" alt="plus" />
     </section>
 
-    <div class="services-list">
+    <section class="services-list">
       <div class="service-card">
         <div class="card-img">
           <img src="images\weather.png" alt="Weather Image" />
@@ -102,14 +102,14 @@
           <p>We deliver outsourced aviation services for military customers.</p>
         </div>
       </div>
-    </div>
+    </section>
     <section class="top-selling">
-      <div class="selling-header">
+      <div class="selling">
         <div><h4>Top selling</h4></div>
         <div><h1>Top Destinations</h1></div>
       </div>
-      <main class="top-selling-list">
-        <div class="top-selling-card">
+      <div class="top-selling-list">
+        <article class="top-selling-card">
           <div class="card-img">
             <img src="images/rome.png" alt="Rome,Italy Image" />
           </div>
@@ -121,8 +121,8 @@
             <img src="images\send-icon.png" />
             <p>10 Days Trip</p>
           </div>
-        </div>
-        <div class="top-selling-card">
+        </article>
+        <article class="top-selling-card">
           <div class="card-img">
             <img src="images/london.jpg" alt="Rome,Italy Image" />
           </div>
@@ -134,8 +134,8 @@
             <img src="images\send-icon.png" />
             <p>12 Days Trip</p>
           </div>
-        </div>
-        <div class="top-selling-card">
+        </article>
+        <article class="top-selling-card">
           <div class="card-img">
             <img src="images/europe.png" alt="Rome,Italy Image" />
           </div>
@@ -147,8 +147,8 @@
             <img src="images\send-icon.png" />
             <p>28 Days Trip</p>
           </div>
-        </div>
-      </main>
+        </article>
+      </div>
     </section>
     <section class="book-trip">
       <section class="left">
@@ -229,7 +229,7 @@
         </section>
       </section>
     </section>
-    <div class="sub-container">
+    <section class="subscribe-container">
       <div class="telegram">
         <img src="images/telegram.png" alt="telegram-icon" />
       </div>
@@ -244,60 +244,60 @@
         </section>
         <section class="email">
           <div class="email-type">
-            <img src="images/email.png" alt="email" /><input
-              type="email"
-              placeholder="Your email"
-            />
+            <img src="images/email.png" alt="email" />
+            <input type="email" placeholder="Your email" />
           </div>
-          <div class="Subscribe-btn">Subscribe</div>
+          <div class="btn Subscribe-btn">Subscribe</div>
         </section>
       </section>
-    </div>
+    </section>
     <footer class="footer">
-      <div class="footer-part1">
-        <h1>TravelPro</h1>
-        <p>
-          Book your trip in a minute,get full <br />
-          control for much longer.
-        </p>
-      </div>
-      <div class="about">
-        <h3>Company</h3>
-        <h5><a href="#">About</a></h5>
-        <h5><a href="#">Careers</a></h5>
-        <h5><a href="#">Mobile</a></h5>
-      </div>
-      <div class="about">
-        <h3>Contact</h3>
-        <h5><a href="#">Help/FAQ</a></h5>
-        <h5><a href="#">Press</a></h5>
-        <h5><a href="#">Affilates</a></h5>
-      </div>
-      <div class="about">
-        <h3>More</h3>
-        <h5><a href="#">Airlinefees</a></h5>
-        <h5><a href="#">Airline</a></h5>
-        <h5><a href="#">Low Fair Tips</a></h5>
-      </div>
-      <div class="social-links">
-        <div class="icon-soc">
-          <div>
-            <img src="images/facebook.png" alt="fb" />
+      <div class="footer-info">
+        <section class="logo-and-slogan">
+          <h1>TravelPro</h1>
+          <p>
+            Book your trip in a minute,get full <br />
+            control for much longer.
+          </p>
+        </section>
+        <nav class="footer-nav">
+          <h3>Company</h3>
+          <h5><a href="#">About</a></h5>
+          <h5><a href="#">Careers</a></h5>
+          <h5><a href="#">Mobile</a></h5>
+        </nav>
+        <nav class="footer-nav">
+          <h3>Contact</h3>
+          <h5><a href="#">Help/FAQ</a></h5>
+          <h5><a href="#">Press</a></h5>
+          <h5><a href="#">Affilates</a></h5>
+        </nav>
+        <nav class="footer-nav">
+          <h3>More</h3>
+          <h5><a href="#">Airlinefees</a></h5>
+          <h5><a href="#">Airline</a></h5>
+          <h5><a href="#">Low Fair Tips</a></h5>
+        </nav>
+        <section class="social-links">
+          <div class="icon-soc">
+            <div>
+              <img src="images/facebook.png" alt="fb" />
+            </div>
+            <div>
+              <img src="images/insta.png" alt="insta" />
+            </div>
+            <div>
+              <img src="images/twitter.png" alt="twitter" />
+            </div>
           </div>
-          <div>
-            <img src="images/insta.png" alt="insta" />
+          <div class="discover"><h3>Discover our app</h3></div>
+          <div class="download">
+            <div><img src="images/gpay-icon.png" alt="gpay" /></div>
+            <div><img src="images/apple-store.png" alt="apple-store" /></div>
           </div>
-          <div>
-            <img src="images/twitter.png" alt="twitter" />
-          </div>
-        </div>
-        <div class="discover"><h3>Discover our app</h3></div>
-        <div class="download">
-          <div><img src="images/gpay-icon.png" alt="gpay" /></div>
-          <div><img src="images/apple-store.png" alt="apple-store" /></div>
-        </div>
+        </section>
       </div>
+      <div class="rights">All rights reserved@travelpro.com</div>
     </footer>
-    <div class="rights">All rights reserved@travelpro.com</div>
   </body>
 </html>
