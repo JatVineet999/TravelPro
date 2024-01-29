@@ -9,21 +9,21 @@
   <body>
     <header>
       <nav>
-        <section class="logo">
+        <div class="logo">
           <img
             src="images\logo.png"
             alt="Pilania Travel Company Logo"
             width="50"
           />
-        </section>
-        <section class="nav-items">
+        </div>
+        <div class="nav-items">
           <ul>
             <li>Destinations</li>
             <li>Hotels</li>
             <li>Flights</li>
             <li>Bookings</li>
             <li>Login</li>
-            <div class="btn signup-btn">Sign up</div>
+            <button class="btn signup-btn">Sign up</button>
             <div class="language-dropdown">
               <select name="lang" id="lang">
                 <option value="English">EN</option>
@@ -32,33 +32,33 @@
               </select>
             </div>
           </ul>
-        </section>
+        </div>
       </nav>
-      <section class="main">
-        <div class="landing-left-section">
-          <h4>BEST DESTINATIONS AROUND THE WORLD</h4>
-          <h1>
-            Travel, enjoy <br />and live a new <br />
-            and full life
-          </h1>
-          <p>
-            Built Wicket Longer admire do barton vanity itself do in it. <br />
-            Preferred to sportsmen it engrossed listening. Park gate <br />
-            sell they west hard for the.
-          </p>
-          <button class="btn cta-btn">Find out more</button>
-        </div>
-        <div class="landing-right-section">
-          <img src="images\traveller.png" alt="traveller" />
-        </div>
-      </section>
     </header>
+    <section class="main">
+      <div class="landing-left-section">
+        <h4>BEST DESTINATIONS AROUND THE WORLD</h4>
+        <h1>Travel, enjoy and live a new and full life</h1>
+        <p>
+          Built Wicket Longer admire do barton vanity itself do in it. <br />
+          Preferred to sportsmen it engrossed listening. Park gate <br />
+          sell they west hard for the.
+        </p>
+        <button class="btn cta-btn">Find out more</button>
+      </div>
+      <div class="landing-right-section">
+        <img src="images\traveller.png" alt="traveller" />
+      </div>
+    </section>
+
     <section class="category">
-      <div>
-        <div class="category">CATEGORY</div>
+      <div class="category-container">
+        <div class="category-header">CATEGORY</div>
         <section class="category-content">We Offer Best Services</section>
       </div>
-      <img src="images\plus.png" alt="plus" />
+      <div>
+        <img src="images\plus.png" alt="plus" />
+      </div>
     </section>
 
     <section class="services-list">
@@ -74,7 +74,7 @@
       </div>
       <div class="service-card">
         <div class="card-img">
-          <img src="images\flights.png" alt="Flight Image" /> 
+          <img src="images\flights.png" alt="Flight Image" />
         </div>
         <div class="card-content">
           <h2>Best Flights</h2>
@@ -105,59 +105,65 @@
     </section>
     <section class="top-selling">
       <div class="selling">
-        <div><h4>Top selling</h4></div>
-        <div><h1>Top Destinations</h1></div>
+        <div><h4>Top Selling</h4></div>
+        <div><h2>Top Destinations</h2></div>
       </div>
       <div class="top-selling-list">
         <article class="top-selling-card">
           <div class="card-img">
             <img src="images/rome.png" alt="Rome,Italy Image" />
           </div>
-          <div class="destination-details">
-            <p>Rome, Italy</p>
-            <p>$5,42k</p>
-          </div>
-          <div class="trip-days">
-            <img src="images\send-icon.png" />
-            <p>10 Days Trip</p>
+          <div class="destination-details-container">
+            <div class="destination-details">
+              <p>Rome, Italy</p>
+              <p>$5,42k</p>
+            </div>
+            <div class="trip-days">
+              <img src="images\send-icon.png" />
+              <p>10 Days Trip</p>
+            </div>
           </div>
         </article>
         <article class="top-selling-card">
           <div class="card-img">
             <img src="images/london.jpg" alt="Rome,Italy Image" />
           </div>
-          <div class="destination-details">
-            <p>London, UK</p>
-            <p>$4.2k</p>
-          </div>
-          <div class="trip-days">
-            <img src="images\send-icon.png" />
-            <p>12 Days Trip</p>
+          <div class="destination-details-container">
+            <div class="destination-details">
+              <p>London, UK</p>
+              <p>$4.2k</p>
+            </div>
+            <div class="trip-days">
+              <img src="images\send-icon.png" />
+              <p>12 Days Trip</p>
+            </div>
           </div>
         </article>
         <article class="top-selling-card">
           <div class="card-img">
             <img src="images/europe.png" alt="Rome,Italy Image" />
           </div>
-          <div class="destination-details">
-            <p>Full europe</p>
-            <p>$15k</p>
-          </div>
-          <div class="trip-days">
-            <img src="images\send-icon.png" />
-            <p>28 Days Trip</p>
+          <div class="destination-details-container">
+            <div class="destination-details">
+              <p>Full europe</p>
+              <p>$15k</p>
+            </div>
+            <div class="trip-days">
+              <img src="images\send-icon.png" />
+              <p>28 Days Trip</p>
+            </div>
           </div>
         </article>
       </div>
     </section>
     <section class="book-trip">
-      <section class="left">
+      <div class="left">
         <div class="book-trip-title"><p>Easy and Fast</p></div>
-        <section class="slogan">
+        <div class="slogan">
           <p>Book Your Next Trip <br />In 3 Easy Steps</p>
-        </section>
-        <section class="options">
-          <section class="option">
+        </div>
+        <div class="options">
+          <div class="option">
             <img src="images/rectangle.png" alt="rectangle" />
             <div class="trip-content">
               <h4>Choose Destination</h4>
@@ -166,8 +172,8 @@
                 elit.Urna,tortor tempus.
               </p>
             </div>
-          </section>
-          <section class="option">
+          </div>
+          <div class="option">
             <img src="images/trip.png" alt="payment" />
             <div class="trip-content">
               <h4>Make Payment</h4>
@@ -176,8 +182,8 @@
                 elit.Urna,tortor tempus.
               </p>
             </div>
-          </section>
-          <section class="option">
+          </div>
+          <div class="option">
             <img src="images/cab.png" alt="cab" />
             <div class="trip-content">
               <h4>Reach Airport on Selected Date</h4>
@@ -186,17 +192,17 @@
                 elit.Urna,tortor tempus.
               </p>
             </div>
-          </section>
-        </section>
-      </section>
-      <section class="right">
+          </div>
+        </div>
+      </div>
+      <div class="right">
         <div class="top-selling-card">
           <div class="card-img">
             <img src="images/girl.jpg" alt="Rome,Italy Image" />
           </div>
           <div class="card-texts">
             <h3>Trip To Greece</h3>
-            <div class="destination-details">
+            <div class="music-player">
               <p>14-29 June| by Robbin jo</p>
             </div>
             <div class="icons">
@@ -210,51 +216,54 @@
               <img src="images/heart (6) 1.png" alt="like" class="like" />
             </div>
           </div>
-        </div>
-        <section class="overhead-banner">
-          <section class="card">
-            <section class="aside-image">
-              <img src="images/rome-sm.png" alt="rome" />
-            </section>
-            <section class="aside-text">
-              <h6 class="ongoing">Ongoing</h6>
-              <h4 class="rome-trip">Trip to rome</h4>
-              <h6 class="trip-progress-no">40%</h6>
-              <h6 class="completion">completed</h6>
-              <div class="progress-line">
-                <div class="completed-bar"></div>
+          <div class="overhead-banner">
+            <div class="card">
+              <div class="aside-image">
+                <img src="images/rome-sm.png" alt="rome" />
               </div>
-            </section>
-          </section>
-        </section>
-      </section>
+              <div class="aside-text">
+                <h6 class="ongoing">Ongoing</h6>
+                <h4 class="rome-trip">Trip to rome</h4>
+                <h6 class="progress-no">40%</h6>
+                <h6 class="completion">completed</h6>
+                <div class="progress-line">
+                  <div class="completed-bar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="subscribe-container">
       <div class="telegram">
         <img src="images/telegram.png" alt="telegram-icon" />
       </div>
-      <section class="subscribe">
+      <div class="subscribe">
         <div class="rings"><img src="images/rings.png" alt="rings" /></div>
         <div class="right-r">
           <img src="images/rings.png" alt="rings" />
         </div>
-        <section class="heading">
+        <div class="heading">
           Subscribe to get information, latest news and other <br />
           interesting offers about Cobham
-        </section>
-        <section class="email">
+        </div>
+        <div class="email">
           <div class="email-type">
             <img src="images/email.png" alt="email" />
             <input type="email" placeholder="Your email" />
           </div>
           <div class="btn Subscribe-btn">Subscribe</div>
-        </section>
-      </section>
+        </div>
+      </div>
+      <div class="plus-r">
+        <img src="images\plus.png" alt="plus" />
+      </div>
     </section>
     <footer class="footer">
       <div class="footer-info">
         <section class="logo-and-slogan">
-          <h1>TravelPro</h1>
+          <div>TravelPro</div>
           <p>
             Book your trip in a minute,get full <br />
             control for much longer.
@@ -292,7 +301,7 @@
           </div>
           <div class="discover"><h3>Discover our app</h3></div>
           <div class="download">
-            <div><img src="images/gpay-icon.png" alt="gpay" /></div>
+            <div class="googlplay"><img src="images/gpay-icon.png" alt="googleplay" /></div>
             <div><img src="images/apple-store.png" alt="apple-store" /></div>
           </div>
         </section>
