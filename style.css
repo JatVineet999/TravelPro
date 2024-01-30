@@ -3,7 +3,7 @@ body {
   margin: 0;
   font-family: "Poppins", sans-serif;
 }
-header {
+.header {
   padding-top: 2px;
   margin: 1.6% 5% 0% 10.5%;
 }
@@ -25,16 +25,16 @@ header nav {
   width: 100%;
   min-width: 40%;
 }
-#lang {
+.lang {
   border: none;
   cursor: pointer;
   padding-left: 23px;
   transition: background-color 0.3s ease;
   background-color: white;
 }
-#lang:focus {
+.lang:focus {
   outline: none;
-  padding: 8px 15px;
+  padding: 1rem 0.7rem;
   cursor: pointer;
 }
 .nav-items {
@@ -49,19 +49,23 @@ header nav {
   flex-direction: row;
   list-style-type: none;
   font-size: medium;
-  padding-right: 25px;
-  padding-left: 10px;
+  padding-right: 1.56em;
+  padding-left: 0.63em;
 }
 header nav ul li {
-  margin: 0 25px 0 0px;
-  padding-right: 13px;
+  margin: 0 1.563rem 0 0px;
+  padding-right: 0.813rem;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #2c333c;
 }
 .nav-items ul li {
   color: #2c333c;
   font-weight: 500;
 }
 /* Styles for Signup Button */
-header nav ul .signup-btn {
+header nav ul .btn-signup {
   padding: 1.5% 3%;
   color: #2c333c;
   font-weight: 600;
@@ -72,12 +76,12 @@ header nav ul .signup-btn {
   border-radius: 6px;
   background-color: white;
 }
-header nav ul .signup-btn:hover {
+header nav ul .btn-signup:hover {
   background-color: goldenrod;
   border-color: goldenrod;
 }
 
-.main {
+.banner {
   display: flex;
   margin-bottom: 0px;
   justify-content: space-around;
@@ -85,33 +89,33 @@ header nav ul .signup-btn:hover {
   align-items: center;
 }
 
-.landing-left-section {
+.banner-left-section {
   flex: 1;
   position: relative;
   top: -10px;
 }
 
-.landing-right-section {
+.banner-right-section {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0;
 }
-.landing-right-section img {
+.banner-right-section img {
   max-width: 107%;
-  margin-right: 43px;
+  margin-right: 2.62em;
   position: relative;
   top: -11px;
 }
-.main div h4 {
+.banner div h4 {
   margin-top: 0%;
   margin-bottom: 4%;
   color: #e27660;
   font-weight: 500;
   font-size: 130%;
 }
-.main div h1 {
+.banner div h1 {
   font-size: 500%;
   line-height: 1.1;
   font-weight: 800;
@@ -119,7 +123,7 @@ header nav ul .signup-btn:hover {
   margin-top: 4%;
   margin-bottom: 5%;
 }
-.main div p {
+.banner div p {
   color: #6b6e8c;
   font-size: medium;
   line-height: 2;
@@ -127,7 +131,7 @@ header nav ul .signup-btn:hover {
   margin-bottom: 5%;
 }
 
-.cta-btn:hover {
+.btn-cta:hover {
   background-color: #ca9804;
 }
 
@@ -141,7 +145,7 @@ header nav ul .signup-btn:hover {
   padding: 0px;
   max-width: 100%;
   position: relative;
-  bottom: 13px;
+  bottom: 0.81rem;
 }
 .category-container {
   padding-right: 1%;
@@ -159,16 +163,19 @@ header nav ul .signup-btn:hover {
   font-size: medium;
   flex-grow: 1;
   font-size: 310%;
+  margin: 0;
   font-weight: 500;
   color: #14183e;
 }
 .category div {
   margin-right: 0%;
 }
+.category figure {
+  margin: 0%;
+}
 .category img {
   position: absolute;
   right: 0;
-
   transform: translate(0, -35%);
 }
 
@@ -184,7 +191,7 @@ header nav ul .signup-btn:hover {
 .service-card {
   width: 20%;
   border-radius: 8px;
-  padding-bottom: 20px;
+  padding-bottom: 1.25em;
   overflow: hidden;
   margin: 2%;
   display: flex;
@@ -198,13 +205,13 @@ header nav ul .signup-btn:hover {
 }
 
 .service-card .card-content {
-  padding: 7px;
+  padding: 0.44em;
   text-align: center;
 }
 
 .service-card .card-content h2 {
   font-size: larger;
-  margin: 10px 0;
+  margin: 0.52em 0;
   color: #252452;
   font-weight: 600;
 }
@@ -231,19 +238,19 @@ header nav ul .signup-btn:hover {
   margin: 5.4% 9.2% 0% 8%;
 }
 
-.top-selling .selling div h4 {
+.top-selling .selling h4 {
   margin-bottom: 0%;
   color: #646886;
   font-weight: 600;
   font-size: large;
-  margin-right: 40px;
+  margin-right: 2.23em;
 }
-.top-selling .selling div h2 {
+.top-selling .selling h2 {
   font-weight: 500;
   font-size: 312%;
   color: #14183e;
-  margin-top: 8px;
-  margin-bottom: 27px;
+  margin-top: 0.201em;
+  margin-bottom: 0.542em;
 }
 .top-selling-list {
   display: flex;
@@ -273,23 +280,21 @@ header nav ul .signup-btn:hover {
   height: auto;
 }
 .destination-details-container {
-  padding: 20px 10px 0 10px;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding: 1.25em 0 0 0;
+  padding-left: 1.563em;
+  padding-right: 1.563em;
 }
-.destination-details,
-.trip-days {
-}
+
 .trip-days p {
   font-weight: 500;
-  padding-top: 10px;
-  padding-left: 10px;
+  padding-top: 0.63em;
+  padding-left: 0.63em;
 }
 
 .trip-days img {
   margin-right: 0;
   padding: 0%;
-  width: 23px;
+  width: 1.565em;
 }
 .destination-details {
   display: flex;
@@ -306,7 +311,7 @@ header nav ul .signup-btn:hover {
   align-items: center;
 }
 
-.left .book-trip-title p {
+.book-trip-left .book-trip-title p {
   color: #5e6282;
   font-weight: 600;
   margin-left: 3px;
@@ -319,7 +324,7 @@ header nav ul .signup-btn:hover {
   margin-bottom: 0px;
   margin-top: 0%;
 }
-.left {
+.book-trip-left {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -330,14 +335,14 @@ header nav ul .signup-btn:hover {
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  margin-left: 38px;
+  margin-left: 2.38em;
 }
-.option {
+.trip-steps {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.trip-content {
+.trip-steps-description {
   max-width: 50%;
   margin-left: 8px;
   color: #787c96;
@@ -346,12 +351,12 @@ header nav ul .signup-btn:hover {
   font-size: medium;
   font-weight: 300;
 }
-.right .top-selling-card {
+.book-trip-right-section .top-selling-card {
   box-shadow: 10px -10px 50px #d6d4fb77;
   width: 100%;
   position: relative;
 }
-.option img {
+.trip-steps img {
   margin-right: 10px;
   width: 7.5%;
   margin-bottom: 15px;
@@ -360,46 +365,50 @@ header nav ul .signup-btn:hover {
   width: 25%;
 }
 
-.option h4 {
+.trip-steps h4 {
   margin-bottom: 0px;
 
   margin-top: 3%;
   color: #5e6282;
 }
-.trip-content p {
+.trip-steps-description p {
   font-weight: 500;
   margin-top: 2px;
 }
 
-.card-texts {
-  margin-left: 25px;
-  margin-top: 10px;
+.trip-dates {
+  margin-left: 1.563em;
+  margin-top: 0.63em;
 }
-.right .top-selling-card .card-img {
+.top-selling-card figure {
+  margin: 0;
+}
+.book-trip-right-section .top-selling-card .card-img {
   padding: 5%;
   padding-bottom: 0;
   margin: 0 3px 20px 3px;
 }
-.card-texts h3 {
+.trip-dates h3 {
   color: #1b1b1b;
   font-size: large;
   font-weight: 500;
   margin-bottom: 10px;
 }
 .like {
-  margin-left: 28%;
+  margin-left: 38%;
 }
 
-.card-texts .destination-details {
+.trip-dates .destination-details {
   padding-left: 0px;
 }
-.card-texts .destination-details p {
+.trip-dates .destination-details p {
   padding-left: 3px;
   font-weight: 500;
   color: #8b8ea5;
   font-size: medium;
 }
 .icons {
+  margin: 0 0 0 0;
   margin-top: 20px;
   max-width: 43%;
   display: flex;
@@ -416,15 +425,15 @@ header nav ul .signup-btn:hover {
   overflow: hidden;
 }
 
-.card-texts .trip-days {
+.trip-dates .trip-days {
   font-weight: 100;
   color: #8b8ea5;
   margin-top: 10px;
   padding-left: 3px;
-  margin-right: -160px;
+  /* margin-right: -10em; */
   margin-bottom: 10px;
 }
-.overhead-banner {
+.aside-overhead-banner {
   display: flex;
   justify-content: center;
   width: 90%;
@@ -438,8 +447,8 @@ header nav ul .signup-btn:hover {
 
 .aside-image {
   width: 20%;
-  margin-top: 16px;
-  margin-left: 10px;
+  margin-top: 1em;
+  margin-left: 0.63em;
 }
 
 .aside-image img {
@@ -493,16 +502,16 @@ header nav ul .signup-btn:hover {
   border-radius: 5px;
 }
 
-.right {
+.book-trip-right-section {
   position: relative;
-  margin-right: 120px;
+  margin-right: 7.5em;
 }
-.right .top-selling-card {
+.book-trip-right-section .top-selling-card {
   width: 104%;
   padding: 1%;
-  margin-top: 75px;
+  margin-top: 4.69em;
   position: relative;
-  right: 30px;
+  right: 1.9em;
 }
 
 .subscribe-container {
@@ -521,37 +530,36 @@ header nav ul .signup-btn:hover {
   justify-content: space-around;
   align-items: center;
   width: 80%;
-
   padding: 3% 0% 6% 3%;
 }
 .rings img {
-  width: 37vh;
-
+  /* width: 37; */
   opacity: 0.1;
 }
 .rings {
   position: absolute;
-  top: 12em;
-  left: 0em;
+  bottom: -2em;
+  left: -2em;
 }
 .right-r img {
-  width: 30vh;
-
+  /* width: 30vh; */
   opacity: 0.1;
   transform: rotate(270deg);
 }
 .right-r {
   position: absolute;
-  top: 1em;
-  left: 59em;
+  /* top:0em; */
+  right: -8em;
 }
 .subscribe-container {
   position: relative;
+  overflow: hidden;
+  padding-bottom: 4em;
 }
 .telegram {
   position: absolute;
-  top: 8em;
-  right: 6em;
+  top: 7em;
+  right: 3.5em;
   z-index: 1;
 }
 .telegram img {
@@ -560,16 +568,21 @@ header nav ul .signup-btn:hover {
 .plus-r {
   position: absolute;
   right: 0;
-  bottom: -5em;
-  right: -4em;
+  bottom: -1.5em;
+  right: -1.3em;
+  transform: rotate(90deg);
+  /* transform: scaleX(1); */
+  z-index: -1;
 }
 .subscribe .heading {
   padding: 20px;
+  padding-top: 0.79em;
+  padding-bottom: 0.79em;
   font-weight: 600;
   font-size: xx-large;
   color: #5e6282;
   text-align: center;
-  margin: 25px 0px 25px 0px;
+  /* margin: 25px 0px 25px 0px; */
 }
 .email {
   display: flex;
@@ -583,10 +596,7 @@ header nav ul .signup-btn:hover {
 .email div img {
   width: 7%;
 }
-.ongoing {
-  margin-top: 20px;
-  font-weight: 500;
-}
+
 .rome-trip {
   margin: 0% 0 7% 0;
   color: black;
@@ -616,9 +626,9 @@ input :focus {
   outline: none;
 }
 
-.cta-btn {
+.btn-cta {
   display: block;
-  margin-top: 15px;
+  margin-top: 0.82em;
   padding: 3.5%;
   padding-left: 4.3%;
   padding-right: 4.3%;
@@ -631,19 +641,19 @@ input :focus {
   border-radius: 10px;
 }
 
-.Subscribe-btn {
-  padding: 10px 10px;
+.btn-subscribe {
+  /* padding: 10px 10px; */
   border: 2px solid #ff8c6b;
   background-color: #ff8c6b;
   border-radius: 8px;
   color: white;
   font-size: medium;
-  padding: 17px;
+  padding: 1.4em;
   padding-left: 7%;
   padding-right: 7%;
 }
 
-.Subscribe-btn:hover {
+.btn-subscribe:hover {
   background-color: goldenrod;
   border-color: goldenrod;
 }
@@ -652,18 +662,18 @@ input :focus {
   display: flex;
   flex-direction: row;
   margin: 0px;
-  margin-top: 15.5%;
+  margin-top: 12%;
   padding-left: 9%;
   justify-content: space-between;
   align-items: center;
   width: 78%;
 }
-.logo-and-slogan div {
-  margin-bottom: 20px;
+.logo-and-slogan header {
+  margin-bottom: 0.42em;
   font-weight: 500;
   font-size: 3em;
 }
-.footer-info p {
+.logo-and-slogan p {
   padding-top: 0;
   margin-top: 0;
   font-weight: 600;
@@ -676,44 +686,52 @@ input :focus {
   color: #5e6282;
 }
 .footer-nav {
-  margin-left: -50px;
-  margin-right: -50px;
-  padding-bottom: 20px;
+  padding-bottom: 1.25em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.footer-nav h5 {
-  margin: 5px 0px 2px 0px;
+.footer-nav ul {
+  list-style: none;
+  padding-left: 0;
+}
+.footer-nav ul li {
+  margin: 0px 0px 2px 0px;
   font-weight: 500;
   font-size: medium;
 }
 .footer-nav h3 {
-  margin: 0px 0px 17px 0px;
+  margin: 0px 0px 0px 0px;
   font-size: x-large;
 }
-.icon-soc {
+.social-icons {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
 .social-links {
-  width: 17%;
+  width: 19%;
+  padding-bottom: 2em;
 }
-.icon-soc div {
+.social-icons div {
   width: 8%;
-  margin-right: 50px;
 }
-.icon-soc div img {
-  width: 370%;
+.social-icons img {
+  width: 70%;
+  margin-right: 1.3rem;
 }
 .googlplay {
   margin-right: 6px;
 }
 
-.discover h3 {
+.discover {
   color: #5e6282;
   font-size: large;
   margin-bottom: 7px;
-  margin-top: 10px;
+  margin-top: 5px;
+  padding-left: 5px;
   font-weight: 500;
 }
 .download {
@@ -721,7 +739,7 @@ input :focus {
   justify-content: space-evenly;
 }
 .download img {
-  width: 105%;
+  width: 100%;
   height: 90%;
 }
 
@@ -730,7 +748,7 @@ input :focus {
   display: flex;
   font-size: smaller;
   font-weight: 500;
-  padding-bottom: 20px;
+  padding-bottom: 1.5em;
   margin: 3% 0 3% 0;
   align-items: center;
   justify-content: center;
